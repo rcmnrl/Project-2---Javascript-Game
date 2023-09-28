@@ -4,7 +4,7 @@
 
 }
 
-.Start{
+#startButton{
     background-color: rgb(27, 19, 19);
     color: rgb(249, 247, 247);
     border: 2px solid #555555;
@@ -15,7 +15,7 @@
   
   }
 
-  .Start:hover{
+  #startButton:hover{
     background-color: #555555;
     color: white;
   }
@@ -31,7 +31,8 @@
 #character{
     width: 100px;
     height:100px;
-    background-color:red;
+    background-image: url("images/usopp\ \(1\).jpg");
+    background-color: transparent;
     position: relative;
     top: 400px;
     left: 100px
@@ -40,10 +41,30 @@
 #block{
     width:100px;
     height: 100px;
-    background-color: black;
+    background-image: url("images/luffyy.png");
+    background-color: transparent;
     position:relative;
-    left:0;
-    animation:moveBlock 2s infinite;
+    top:500px;
+    animation: slide 1s infinite linear;
 }
 
+@keyframes slide {
+    0% {
+        top: 0px 
+    };
+    100% {
+        top: 500px 
+    };
+}
 
+#left, #right {
+    width:50%;
+    position: absolute;
+    height: 500px;
+ 
+}
+
+#right{
+    left:50%;
+
+}
