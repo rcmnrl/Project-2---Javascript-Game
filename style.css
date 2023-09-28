@@ -1,5 +1,5 @@
 *{ 
-    padding:0;
+    padding-top: 60px;;
     margin:0;
 
 }
@@ -10,14 +10,21 @@
     border: 2px solid #555555;
     margin: 0;
   position: absolute;
-  top: 80%;
+  top: 5%;
   left: 40%;
-  
+  height: 5%;
   }
 
   #startButton:hover{
     background-color: #555555;
     color: white;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 150%;
+    left: 40%;
+    
   }
 
 #OnepieceGame{
@@ -34,7 +41,7 @@
     background-image: url("images/usopp\ \(1\).jpg");
     background-color: transparent;
     position: relative;
-    top: 400px;
+    top: 335px;
     left: 100px
 }
 
@@ -45,8 +52,10 @@
     background-color: transparent;
     position:relative;
     top:500px;
+
     animation: slide 1s infinite linear;
 }
+
 
 @keyframes slide {
     0% {
