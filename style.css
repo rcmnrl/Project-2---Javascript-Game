@@ -1,14 +1,16 @@
 *{ 
-    padding-top: 20px;;
+    padding-top: 10px;
     margin:0;
     
 }
-.myDiv {
-    border: 5px outset lightblue;
-    background-color: rgb(51, 143, 174);    
-    text-align: left;
-    
-  }
+.instructions {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #d00000; /* Text color */
+  text-align: left;
+  padding-left: 10%;
+  
+}
 
 #startButton{
     background-color: rgb(31, 26, 92);
@@ -45,61 +47,72 @@
 
 #OnepieceGame{
     width: 300px;
-    height:600px;
+    height:550px;
     border: 1px solid black;
     margin:auto ;
-    background-color: aliceblue;
+    margin-top: 5%;
+    background-color: rgb(193, 85, 85);
+    position: relative;
+
 }
 
 
 body {
-    background-image: url('images/bg.webp');
+    background-image: url('images/mp.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* Add other background properties as needed */
+    
   }
   .game-board {
-    width: 300px; /* Adjust the width as needed */
+    width: 100%; /* Set the width to 100% to match the parent width */
+    height: 100%; /* Set the height to 100% to match the parent height */
+    position: static; 
+    top: 0; 
+    left: 0; 
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Now we have 3 columns */
-    grid-template-rows: repeat(5, 1fr); /* Now we have 5 rows */
-    gap: 2px; /* Adjust the gap between rows */
-    grid-column-gap: 2px; /* Adjust the gap between columns */
-    
-
-  }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px;
+  
+    grid-column-gap: 2px;
+}
+  
   
   .tile {
-    width: 100px; /* Set the width of each tile */
+    width: 98px; /* Set the width of each tile */
     height: 100px; /* Set the height of each tile */
     background-color: #020202; /* Tile color */
-    border: 0px white;
+
+    padding-top: 50%;
   }
   
   /* Style for individual tiles */
-  .tile:nth-child(3n + 9) {
+  .tile:nth-child(3n + 9 ) {
     grid-row: 1; /* Place tiles in the first row (top) */
     grid-column: 3; /* Place tiles in the third column (right) */
   }
+  
+
+  
+
 #character{
     width: 100px;
     height:100px;
-    background-image: url("images/usop.png");
+    background-image: url("images/gr5.png");
     background-color: transparent;
-    position: relative;
-    top: 335px;
+    position:absolute;
+    top:430px;
     left: 100px
 }
 
 #block{
     width:100px;
     height: 100px;
-    background-image: url("images/luffyyy.png");
+    background-image: url("images/kaido.png");
     background-color: transparent;
-    position:relative;
+    position:absolute;
     top:500px;
-
     animation: slide 1s infinite linear;
 }
 
@@ -124,3 +137,4 @@ body {
     left:50%;
 
 }
+

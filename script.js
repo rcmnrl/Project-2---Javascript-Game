@@ -20,7 +20,7 @@ function startGame() {
               character.style.left = left + "px";
           }
       }
-  
+
     var block = document.getElementById("block");
     var counter = 0;
     block.addEventListener("animationiteration", () => {
@@ -28,6 +28,7 @@ function startGame() {
       let left = random * 100;
       block.style.left = left + "px";
       counter++;
+    
     });
   
     setInterval(function () {
@@ -43,7 +44,7 @@ function startGame() {
       if (
         characterLeft == blockLeft &&
         blockTop < 500 &&
-        blockTop > 330
+        blockTop > 370
       ) {
         alert("Game over. Score: " + counter);
         block.style.animation = "none";
@@ -62,6 +63,7 @@ function startGame() {
  
   function pauseAudio() {
     audio.pause();
+    
   }
   
   function setVolume(volume) {
@@ -72,13 +74,15 @@ function startGame() {
     console.log("Start button clicked");
     startGame();
     audio.play();
+    block();
   });
 
 
   function stopAudio() {
-    audio.pause();           // Pause the audio
-    audio.currentTime = 0;  // Reset the playback position to the beginning
+    audio.pause();          
+    audio.currentTime = 0;  
   }
+  
   
 
   document.getElementById("right").addEventListener("touchstart", moveRight);
