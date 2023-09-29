@@ -3,13 +3,56 @@
     margin:0;
     
 }
-.instructions {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #d00000; /* Text color */
-  text-align: left;
-  padding-left: 10%;
-  
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-image: url(images/kuzan-one-piece.gif);
+  width: 25%;
+  height: 30%;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  text-align: center;
+}
+
+.close-button {
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+#instructions-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+h1 {
+  color: #b32424;
+  font-weight: bold; 
+font-size: 40px;
+}
+
+h3{
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #startButton{
@@ -18,7 +61,7 @@
     border: 2px solid #555555;
     margin: 0;
   position: absolute;
-  top: 5%;
+  top: 90%;
   left: 40%;
   height: 5%;
   }
@@ -51,22 +94,42 @@
     border: 1px solid black;
     margin:auto ;
     margin-top: 5%;
+
     background-color: rgb(193, 85, 85);
     position: relative;
 
 }
 
 
+.Bounty {
+  border: none;
+  width: 200px;
+  height: 100px;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+ left: 5px;
+}
+
+@media (max-width: 768px) {
+  .Bounty {
+    max-width: 90%; 
+    height: auto;
+    font-size: 16px;
+  }
+}
+
 body {
     background-image: url('images/mp.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding-top: 7vmax;
     
   }
   .game-board {
-    width: 100%; /* Set the width to 100% to match the parent width */
-    height: 100%; /* Set the height to 100% to match the parent height */
+    width: 100%; 
+    height: 100%; 
     position: static; 
     top: 0; 
     left: 0; 
@@ -80,17 +143,16 @@ body {
   
   
   .tile {
-    width: 98px; /* Set the width of each tile */
-    height: 100px; /* Set the height of each tile */
-    background-color: #020202; /* Tile color */
+    width: 98px; 
+    height: 100px; 
+    background-color: #020202; 
 
     padding-top: 50%;
   }
-  
-  /* Style for individual tiles */
+
   .tile:nth-child(3n + 9 ) {
-    grid-row: 1; /* Place tiles in the first row (top) */
-    grid-column: 3; /* Place tiles in the third column (right) */
+    grid-row: 1;
+    grid-column: 3; 
   }
   
 
@@ -137,4 +199,12 @@ body {
     left:50%;
 
 }
+
+
+#myaudio {
+  display: block;
+  margin: auto;
+
+}
+
 

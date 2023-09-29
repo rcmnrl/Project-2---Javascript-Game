@@ -19,10 +19,14 @@
 <body>
     <button type="button" class="btn start" id="startButton">Start Game</button>
 
-    <div class="instructions">
-      <p>Instructions</p>
-      <p></p>
-  </div>
+    <button id="instructions-button">How to Play ?</button>
+    <div id="instructions-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Instructions</h1>
+            <h3>the player(character: luffy) should avoid (character:kaido) every avoid you make you have an score. </h3>
+        </div>
+    </div>
 
  <div id="OnepieceGame">
     <div id="left"></div>
@@ -53,9 +57,21 @@
       
     </div>
      </div>
+
+
+     <div class="container">
+      <img src="images/One_Piece_Bounty_Rush.webp" alt="One Piece Bounty Rush" class="Bounty">
+  </div>
       <audio id="myAudio" controls>
         <source src="Binks no Sake - One Piece (Marimba Ringtone).mp3" type="audio/mpeg">
       </audio>
+
+      <audio id="gameOverSound">
+        <source src="Oggy and the Cockroaches - ALL OPENINGS  1998 - 2018 (mp3cut.net).mp3" type="audio/mpeg">
+      
+      </audio>
+      
+    
 
  <script src="script.js"></script>
 </body>

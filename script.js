@@ -21,6 +21,7 @@ function startGame() {
           }
       }
 
+     
     var block = document.getElementById("block");
     var counter = 0;
     block.addEventListener("animationiteration", () => {
@@ -46,13 +47,15 @@ function startGame() {
         blockTop < 500 &&
         blockTop > 370
       ) {
-        alert("Game over. Score: " + counter);
+        alert("Game over. Bounty Rush Score: " + counter);
         block.style.animation = "none";
-         stopAudio(); 
+         stopAudio();
+         gameOverSound.play();
       }
     }, 1);
   }
   
+
   var audio = document.getElementById("myAudio");
 
 
@@ -74,7 +77,7 @@ function startGame() {
     console.log("Start button clicked");
     startGame();
     audio.play();
-    block();
+ 
   });
 
 
@@ -84,6 +87,27 @@ function startGame() {
   }
   
   
+  var instructionsModal = document.getElementById("instructions-modal");
+  var instructionsButton = document.getElementById("instructions-button");
+  var closeButton = document.querySelector(".close-button");
+  
+  // Open the modal when the button is clicked
+  instructionsButton.onclick = function() {
+      instructionsModal.style.display = "block";
+  }
+  
+  // Close the modal when the close button is clicked
+  closeButton.onclick = function() {
+      instructionsModal.style.display = "none";
+  }
+  
+  // Close the modal if the user clicks outside of it
+  window.onclick = function(event) {
+      if (event.target == instructionsModal) {
+          instructionsModal.style.display = "none";
+      }
+  }
+
 
   document.getElementById("right").addEventListener("touchstart", moveRight);
   document.getElementById("left").addEventListener("touchstart", moveLeft);
