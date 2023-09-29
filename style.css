@@ -1,7 +1,7 @@
 *{ 
     padding-top: 60px;;
     margin:0;
-
+    
 }
 
 #startButton{
@@ -22,10 +22,20 @@
 
   .dropdown {
     position: absolute;
-    top: 150%;
-    left: 40%;
-    
+    background-color: black;
+    background-color: gray;
+    top: -5%;
+    margin: 0;
+    left: 50%;
+    color: white;
+    height: 5%;
   }
+
+  .dropdown:hover {
+    background-color: #555555;
+    color: white;
+    
+}
 
 #OnepieceGame{
     width: 300px;
