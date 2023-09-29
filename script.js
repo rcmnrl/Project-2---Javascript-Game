@@ -51,9 +51,39 @@ function startGame() {
     }, 1);
   }
   
-  // Add an event listener to the "Start" button
-  document.getElementById("startButton").addEventListener("click", startGame);
+  var audio = document.getElementById("myAudio");
+
+
+  function playAudio() {
+    audio.play();
+  }
   
+ 
+  function pauseAudio() {
+    audio.pause();
+  }
+  
+  function setVolume(volume) {
+    audio.volume = volume;
+  }
+ 
+  document.getElementById("startButton").addEventListener("click", function () {
+    console.log("Start button clicked");
+    startGame();
+    audio.play();
+  });
+
+
+  function stopAudio() {
+    audio.pause();           // Pause the audio
+    audio.currentTime = 0;  // Reset the playback position to the beginning
+  }
+  if (characterLeft == blockLeft && blockTop < 500 && blockTop > 330) {
+    alert("Game over. Score: " + counter);
+    block.style.animation = "none";
+    stopAudio(); // Call the stopAudio function
+  }
+
   // Add touch event listeners for mobile devices
   document.getElementById("right").addEventListener("touchstart", moveRight);
   document.getElementById("left").addEventListener("touchstart", moveLeft);
