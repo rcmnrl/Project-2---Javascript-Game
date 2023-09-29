@@ -19,6 +19,8 @@
 <body>
     <button type="button" class="btn start" id="startButton">Start Game</button>
 
+    <div  class="mydiv" ><h2 >Instructions</h2></div>
+
  <div id="OnepieceGame">
     <div id="left"></div>
     <div id="right"></div>
@@ -26,23 +28,28 @@
     <div id="character"></div>
 
    
-        <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Dropdown
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Easy</a></li>
-            <li><a href="#">Medium</a></li>
-            <li><a href="#">Hard</a></li>
-          </ul>
-        </div>
-      </div>
-      <audio controls autoplay>
-        <source src="Binks no Sake - One Piece (Marimba Ringtone).mp3" type="audio/ogg">
+ <div class="game-board">
+  <div class="tile"></div>
+  <div class="tile"></div>
+  <div class="tile"></div>
+  <div class="tile"></div>
+  <div class="tile"></div>
+  <div class="tile"></div>
+  <div class="tile"></div>
+  <div class="tile"></div>
+  <div class="tile"></div>
+  <div class="tile"></div>
+  <div class="tile"></div>
+  <div class="tile"></div>
+  <div class="tile"></div>
+</div>
+ </div>
+      <audio id="myAudio" controls>
         <source src="Binks no Sake - One Piece (Marimba Ringtone).mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
       </audio>
 
  <script src="script.js"></script>
 </body>
 
 </html>
+

@@ -1,5 +1,5 @@
 function startGame() {
-    // This code should only run when the "Start" button is clicked
+   
     document.addEventListener("keydown", event => {
         if(event.key==="ArrowLeft"){moveLeft();}
         if(event.key==="ArrowRight"){moveRight();}
@@ -47,6 +47,7 @@ function startGame() {
       ) {
         alert("Game over. Score: " + counter);
         block.style.animation = "none";
+         stopAudio(); 
       }
     }, 1);
   }
@@ -78,12 +79,7 @@ function startGame() {
     audio.pause();           // Pause the audio
     audio.currentTime = 0;  // Reset the playback position to the beginning
   }
-  if (characterLeft == blockLeft && blockTop < 500 && blockTop > 330) {
-    alert("Game over. Score: " + counter);
-    block.style.animation = "none";
-    stopAudio(); // Call the stopAudio function
-  }
+  
 
-  // Add touch event listeners for mobile devices
   document.getElementById("right").addEventListener("touchstart", moveRight);
   document.getElementById("left").addEventListener("touchstart", moveLeft);
