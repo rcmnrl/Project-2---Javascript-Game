@@ -19,8 +19,9 @@
 .modal-content {
   background-image: url(images/kuzan-one-piece.gif);
   width: 25%; /* Adjust the width for different screen sizes */
-  height: 33%; /* Adjust the height for different screen sizes */
+  height: 45%; /* Adjust the height for different screen sizes */
   margin: 20% auto;
+  color: #000;
   padding: 20px;
   border: 1px solid #888;
   text-align: center;
@@ -28,7 +29,7 @@
 @media (max-width: 768px) {
   .modal-content {
       width: 90%; /* Adjust width for smaller screens */
-      height: 70%; /* Adjust height for smaller screens */
+      height: 40%; /* Adjust height for smaller screens */
       margin: 10% auto;
       padding: 5px;
       font-size: 16px; /* Adjust font size for smaller screens */
@@ -68,58 +69,49 @@ h3{
   font-weight: bold;
 }
 
-#startButton{
-    background-color: rgb(31, 26, 92);
-    color: rgb(249, 247, 247);
-    border: 2px solid #555555;
-    margin: 0;
-  position: absolute;
-  top: 88%;
-  left: 41%;
-  height: 4%;
-  width:4%
-  }
-
-  #startButton:hover{
-    background-color: #555555;
-    color: white;
-  }
-
-  #medium-button{
-    background-color: rgb(99, 42, 40);
-    color: rgb(249, 247, 247);
-    border: 2px solid #555555;
-    margin: 0;
-  position: absolute;
-  top: 88%;
-  left: 47%;
-  width:4%;
-  height: 4%;
-  }
-
-  #medium-button:hover{
-    background-color: #555555;
-    color: white;
-  }
-
+.button-container {
+position: absolute;
+  flex-direction: column;
+  text-align: center;
+  top: 80%;
+  left:40%;
   
-  #hard-button{
-    background-color: rgb(99, 42, 40);
-    color: rgb(249, 247, 247);
-    border: 2px solid #555555;
-    margin: 0;
-  position: absolute;
-  top: 88%;
-  left: 53%;
-  width:4%;
-  height: 5%;
+}
+
+.button-container button {
+  margin: 10px;
+  background-color: rgb(34, 3, 121);
+  color: rgb(249, 247, 247);
+  border: 2px solid #555555;
+  width: 80%;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+  
   }
 
-  #hard-button:hover{
-    background-color: #555555;
-    color: white;
+  .button-container button {
+    margin: 6px;
+  }
+}
+
+.button-container {
+  position: absolute;
+    flex-direction: column;
+    text-align: center;
+    top: 80%;
+    left:40%;
+    
   }
   
+
+  
+
+ 
+
 
   .dropdown {
     position: absolute;
@@ -230,7 +222,7 @@ body {
     background-color: transparent;
     position:absolute;
     top:500px;
-    animation: slide 0.9s infinite linear;
+    animation: slide 1s infinite linear;
 }
 
 
