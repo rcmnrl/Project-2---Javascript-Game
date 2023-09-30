@@ -112,7 +112,7 @@ h3{
   top: 88%;
   left: 53%;
   width:4%;
-  height: 4%;
+  height: 5%;
   }
 
   #hard-button:hover{
@@ -230,7 +230,7 @@ body {
     background-color: transparent;
     position:absolute;
     top:500px;
-    animation: slide 1.2s infinite linear;
+    animation: slide 0.8s infinite linear;
 }
 
 

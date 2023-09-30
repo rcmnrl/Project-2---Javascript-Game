@@ -116,10 +116,5 @@ function startGame() {
     window.location.href = 'medium.html';
   });
 
-  document.getElementById("hard-button").addEventListener("click", function () {
-    // Change the window location to the desired URL
-    window.location.href = 'hard.html';
-  });
-
   document.getElementById("right").addEventListener("touchstart", moveRight);
   document.getElementById("left").addEventListener("touchstart", moveLeft);
