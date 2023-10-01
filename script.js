@@ -118,7 +118,7 @@ function startGame() {
 
   document.getElementById("hard-button").addEventListener("click", function () {
     // Change the window location to the desired URL
-    window.location.href = 'hard.html';
+    window.location.href = "hard.html";
   });
 
   document.getElementById("right").addEventListener("touchstart", moveRight);

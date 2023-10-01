@@ -206,9 +206,9 @@ body {
   
 
 #character{
-    width: 100px;
+    width: 90px;
     height:100px;
-    background-image: url("images/gr5.png");
+    background-image: url("images/ZOROOOO\ \(1\)\ \(1\).png");
     background-color: transparent;
     position:absolute;
     top:430px;
@@ -216,13 +216,13 @@ body {
 }
 
 #block{
-    width:100px;
-    height: 100px;
-    background-image: url("images/kaido.png");
-    background-color: transparent;
-    position:absolute;
-    top:500px;
-    animation: slide 1s infinite linear;
+  width:100px;
+  height: 100px;
+  background-image: url("images/KING.png");
+  background-color: transparent;
+  position:absolute;
+  top:500px;
+  animation: slide 1s infinite linear;
 }
 
 
